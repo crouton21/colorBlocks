@@ -1,0 +1,23 @@
+.box{
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#redBox{
+  background-color: red;
+}
+
+#greenBox{
+  background-color: green;
+}
+
+#blueBox{
+  background-color: blue;
+}
+
+#yellowBox{
+  background-color: yellow;
+}
