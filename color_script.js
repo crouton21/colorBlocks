@@ -14,7 +14,7 @@ function onReady(){
   $('.blueCount').on('click', addBlueBox);
   $('.greenCount').on('click', addGreenBox);
   $('#allBoxes').on('click', '.box' ,clickBox);
-  $('#redEnter').on('click', redInput);
+  $('#redEnter').on('click', redInput);chr
   $('#blueEnter').on('click', blueInput);
   $('#yellowEnter').on('click', yellowInput);
   $('#greenEnter').on('click', greenInput);

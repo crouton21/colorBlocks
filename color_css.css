@@ -41,16 +41,20 @@
 
 #greenBorder{
   border-color: green;
+  background-color: #EAFAF1;
 }
 
 #redBorder{
   border-color: red;
+  background-color: #F9EBEA;
 }
 
 #yellowBorder{
   border-color: yellow;
+  background-color: #FEF9E7;
 }
 
 #blueBorder{
   border-color: blue;
+  background-color: #EAF2F8;
 }
