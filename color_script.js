@@ -13,8 +13,13 @@ function onReady(){
   $('.yellowCount').on('click', addYellowBox);
   $('.blueCount').on('click', addBlueBox);
   $('.greenCount').on('click', addGreenBox);
-  $('#allBoxes').on('click', clickBox);
+  $('#allBoxes').on('click', '.box' ,clickBox);
+  $('#redEnter').on('click', redInput);
+  $('#blueEnter').on('click', blueInput);
+  $('#yellowEnter').on('click', yellowInput);
+  $('#greenEnter').on('click', greenInput);
 }
+
 
 function addRedBox (){
   console.log('in addRedBox');
@@ -49,6 +54,57 @@ function addGreenBox (){
 }
 
 function clickBox (e) {
-  console.log('in clickBox');
-  $(this).children().hide()
+  $(this).hide();
+  if (this.id == 'redBox'){
+    redCount -= 1;
+    $('.redNumber').empty();
+    $('.redNumber').append('Red Count: '+redCount);
+  }
+  if (this.id == 'blueBox'){
+    blueCount -= 1;
+    $('.blueNumber').empty();
+    $('.blueNumber').append('Blue Count: '+blueCount);
+  }
+  if (this.id == 'greenBox'){
+    greenCount -= 1;
+    $('.greenNumber').empty();
+    $('.greenNumber').append('Green Count: '+greenCount);
+  }
+  if (this.id == 'yellowBox'){
+    yellowCount -= 1;
+    $('.yellowNumber').empty();
+    $('.yellowNumber').append('Yellow Count: '+yellowCount);
+  }
+}
+
+function redInput(){
+  var redQuantity = $('#redInput').val();
+  for (var i=0; i<redQuantity; i++){
+    addRedBox();
+  }
+  $('#redInput').val('');
+}
+
+function yellowInput(){
+  var yellowQuantity = $('#yellowInput').val();
+  for (var i=0; i<yellowQuantity; i++){
+    addYellowBox();
+  }
+  $('#yellowInput').val('');
+}
+
+function blueInput(){
+  var blueQuantity = $('#blueInput').val();
+  for (var i=0; i<blueQuantity; i++){
+    addBlueBox();
+  }
+  $('#blueInput').val('');
+}
+
+function greenInput(){
+  var greenQuantity = $('#greenInput').val();
+  for (var i=0; i<greenQuantity; i++){
+    addGreenBox();
+  }
+  $('#greenInput').val('');
 }
