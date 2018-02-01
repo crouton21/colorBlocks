@@ -13,7 +13,7 @@ function onReady(){
   $('.yellowCount').on('click', addYellowBox);
   $('.blueCount').on('click', addBlueBox);
   $('.greenCount').on('click', addGreenBox);
-  $('.box').on('click', clickBox);
+  $('#allBoxes').on('click', clickBox);
 }
 
 function addRedBox (){
@@ -50,5 +50,5 @@ function addGreenBox (){
 
 function clickBox (e) {
   console.log('in clickBox');
-  $(this).hide();
+  $(this).children().hide()
 }
