@@ -22,6 +22,35 @@
   background-color: yellow;
 }
 
-.colorButtons{
-  margin-top: 20px;
+.inputBox{
+  width: 20px;
+}
+
+.border{
+  border-width: 3px;
+  border-style: solid;
+  width: 110px;
+  height: 100px;
+  float: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+#greenBorder{
+  border-color: green;
+}
+
+#redBorder{
+  border-color: red;
+}
+
+#yellowBorder{
+  border-color: yellow;
+}
+
+#blueBorder{
+  border-color: blue;
 }
